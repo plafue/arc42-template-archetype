@@ -23,6 +23,8 @@ IMPORTANT: If you wish to use the Shaape rendering support, you need to have Sha
 
 === TO-DOs / Other ideas:
 
+* Get this to maven cetral or similarly well known repository - if one has to install this manually first there is not much more benefit from it.
+* Use Maven Release plugin/git flow
 * Provide both, an english as well as a german version (configuration parameter when generating, maybe?).
   - There is some denglisch going on in there - maybe support arc42 cleaning up a little?.
 * Help the arc42 fellows to provide the templates as a maven artifact for easier version management.
