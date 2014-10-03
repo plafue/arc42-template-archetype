@@ -39,7 +39,7 @@ artifactId
             ├── appendix-examples.adoc
             ├── appendix-practitioner.adoc
             ├── appendix-references.adoc
-            ├── arc42-template.adoc 
+            ├── arc42-template.adoc
             ├── config.adoc
             ├── images                            <--- Automagically rendered Shape diagrams will be stored here.
             │   └── arc42-logo.png
@@ -72,10 +72,11 @@ IMPORTANT: If you wish to use the Shaape rendering support, you need to have Sha
 
 === TO-DOs / Other ideas:
 
-* Get this to maven cetral or similarly well known repository - if one has to install this manually first there is not much more benefit from it.
+* Get this to maven central or similarly well known repository - if one has to install this manually first there is not much more benefit from it.
 * Use Maven Release plugin/git flow
 * Provide both, an english as well as a german version (configuration parameter when generating, maybe?).
-  - There is some denglisch going on in there - maybe support arc42 cleaning up a little?.
+  - Or rather go with convention over configuration and use the user locale maybe?
+  - There is some denglisch going on in there - maybe support arc42 by cleaning up a little?.
 * Help the arc42 fellows to provide the templates as a maven artifact for easier version management.
 * Reuse groupId, artifactId (maybe other parameters) within the template (for titles or the like).
 * Maybe provide more flexibility in the type of output (Or maybe just focus on html at the moment?)
