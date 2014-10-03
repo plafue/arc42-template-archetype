@@ -1,3 +1,5 @@
+image::https://travis-ci.org/plafue/arc42-template-archetype.svg?branch=master[Build Status, link="https://travis-ci.org/plafue/arc42-template-archetype"]
+
 == arc42-Template Maven Archetype
 
 This is a maven archetype that can aid including the arc42 software architecture template into existing maven projects. The approach here is to use open, "diffable" artifacts (AsciiDoc documents, Shaape diagrams) to ease working with the documentation with developer tools, as well as being able to export to non-technical user friendly formats. Of course you can use other supporting tools or formats if you wish so.
