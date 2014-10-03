@@ -13,7 +13,7 @@ At the moment you need to clone/download this project and install it locally (so
 [source,bash]
 mvn install
 
-Once the archetype is available in your local maven repository, you can generate a new maven module as you would usually do throught the maven archetype plugin:
+Once the archetype is available in your local maven repository, you can generate a new maven module in a directory of your choice, as you would usually do throught the maven archetype plugin:
 
 [source,bash]
 mvn archetype:generate                                  \
