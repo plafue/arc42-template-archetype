@@ -21,14 +21,14 @@ mvn archetype:generate                                  \
   -DarchetypeArtifactId=arc42-template-archetype        \
   -DarchetypeVersion=1.0-SNAPSHOT                       \
 
-An interactive prompt will ask for your project's groupId, artifactId and version. Once you confirm all your inputs a new project will the following scructure will exist:
+An interactive prompt will ask for your project's groupId, artifactId and version. Once you confirm all your inputs a new project with the following scructure will be generated:
 
 [source,bash]
 artifactId
 ├── pom.xml
 └── src
     ├── assembly
-    │   └── assembly.xml                          <--- Information regarding the final zip artefact
+    │   └── assembly.xml                          <--- Information regarding the final zip artifact
     └── docs
         └── arc42
             ├── 01_introduction_and_goals.adoc
