@@ -4,6 +4,53 @@ This is a maven archetype that can aid including the arc42 software architecture
 
 The more generic, verbose asciidoc "golden-master" template is used here, to also help newcomers to find their way in the template structure.
 
+== Usage
+
+At the moment you need to clone/download this project and install it locally (someday it will make it to maven central) :)
+
+[source,bash]
+mvn install
+
+Once the archetype is available in your local maven repository, you can generate a new maven module as you would usually do throught the maven archetype plugin:
+
+[source,bash]
+mvn archetype:generate                                  \
+  -DarchetypeGroupId=org.plafuro.arc                    \
+  -DarchetypeArtifactId=arc42-template-archetype        \
+  -DarchetypeVersion=1.0-SNAPSHOT                       \
+
+An interactive prompt will ask for your project's groupId, artifactId and version. Once you confirm all your inputs a new project will the following scructure will exist:
+
+[source,bash]
+artifactId
+├── pom.xml
+└── src
+    ├── assembly
+    │   └── assembly.xml                          <--- Information regarding the final zip artefact
+    └── docs
+        └── arc42
+            ├── 01_introduction_and_goals.adoc
+            │  
+            ├── 12_glossary.adoc
+            ├── about-arc42.adoc
+            ├── appendix-contributing.adoc
+            ├── appendix-examples.adoc
+            ├── appendix-practitioner.adoc
+            ├── appendix-references.adoc
+            ├── arc42-template.adoc 
+            ├── config.adoc
+            ├── images                            <--- Automagically rendered Shape diagrams will be stored here.
+            │   └── arc42-logo.png
+            ├── template-blackbox-long.adoc
+            ├── template-blackbox-short.adoc
+            └── template-whitebox.adoc
+
+You can test your freshly created maven module by running
+
+[source,bash]
+mvn process-resources generate-resources
+    \                 \This phase generates a zip file on target, with the contents of target/generated-docs
+     \This phase renders the html version of your adoc files under target/generated-docs
 
 === Nanos gigantum humeris insidentes
 
@@ -29,3 +76,4 @@ IMPORTANT: If you wish to use the Shaape rendering support, you need to have Sha
   - There is some denglisch going on in there - maybe support arc42 cleaning up a little?.
 * Help the arc42 fellows to provide the templates as a maven artifact for easier version management.
 * Reuse groupId, artifactId (maybe other parameters) within the template (for titles or the like).
+* Maybe provide more flexibility in the type of output (Or maybe just focus on html at the moment?)
