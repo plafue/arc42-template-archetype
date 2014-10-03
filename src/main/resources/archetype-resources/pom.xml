@@ -93,7 +93,6 @@
                     <descriptors>
                             <descriptor>src/assembly/assembly.xml</descriptor>
                     </descriptors>
-                    <finalName>arc42-docs</finalName>
                 </configuration>
                 <executions>
                     <execution>
