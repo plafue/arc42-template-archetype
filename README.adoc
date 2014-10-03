@@ -30,7 +30,7 @@ artifactId
     └── docs
         └── arc42
             ├── 01_introduction_and_goals.adoc
-            │  
+           ...
             ├── 12_glossary.adoc
             ├── about-arc42.adoc
             ├── appendix-contributing.adoc
@@ -77,3 +77,6 @@ IMPORTANT: If you wish to use the Shaape rendering support, you need to have Sha
 * Help the arc42 fellows to provide the templates as a maven artifact for easier version management.
 * Reuse groupId, artifactId (maybe other parameters) within the template (for titles or the like).
 * Maybe provide more flexibility in the type of output (Or maybe just focus on html at the moment?)
+
+''''
+Bugs, pull requests, ideas... aaaaaaallll welcome.
