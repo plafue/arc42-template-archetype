@@ -60,7 +60,7 @@ This piece of software is in no way affiliated with arc42.org but it reuses it's
 The arc42 template is distributed under the MIT Liscense (see https://github.com/arc42/arc42-template).
 
 The POM of the generated project is also preconfigured with the awesome http://asciidoctor.org/news/2014/08/23/asciidoctor-maven-plugin-1-5-0-released/[asciidoctor-maven-plugin],
-support of Shaape diagrams (thanks to https://github.com/asciidoctor/asciidoctor-diagram[asciidoctor-diagram]), as well as the maven assembly plugin to package a HTML-Rendered version of the documentation (for later upload or distribution).
+support of Shaape diagrams (thanks to https://github.com/asciidoctor/asciidoctor-diagram[asciidoctor-diagram]), as well as the maven assembly plugin to package a HTML-Rendered version of the documentation in a zip file (for later upload or distribution).
 
 IMPORTANT: If you wish to use the Shaape rendering support, you need to have Shaape installed locally.
 
