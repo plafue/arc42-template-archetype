@@ -49,8 +49,8 @@ You can test your freshly created maven module by running
 
 [source,bash]
 mvn process-resources generate-resources
-    \                 \This phase generates a zip file on target, with the contents of target/generated-docs
-     \This phase renders the html version of your adoc files under target/generated-docs
+    \                 \ This phase generates a zip file on target, with the contents of target/generated-docs
+     \ This phase renders the html version of your adoc files under target/generated-docs
 
 === Nanos gigantum humeris insidentes
 
