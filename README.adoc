@@ -1,0 +1,29 @@
+== arc42-Template Maven Archetype
+
+This is a maven archetype that can aid including the arc42 software architecture template into existing maven projects. The approach here is to use open, "diffable" artifacts (AsciiDoc documents, Shaape diagrams) to ease working with the documentation with developer tools, as well as being able to export to non-technical user friendly formats. Of course you can use other supporting tools or formats if you wish so.
+
+The more generic, verbose asciidoc "golden-master" template is used here, to also help newcomers to find their way in the template structure.
+
+
+=== Nanos gigantum humeris insidentes
+
+This piece of software is in no way affiliated with arc42.org but it reuses it's core artifact (without necessarily extending it).
+The arc42 template is distributed under the MIT Liscense (see https://github.com/arc42/arc42-template).
+
+The POM of the generated project is also preconfigured with the awesome http://asciidoctor.org/news/2014/08/23/asciidoctor-maven-plugin-1-5-0-released/[asciidoctor-maven-plugin],
+support of Shaape diagrams (thanks to https://github.com/asciidoctor/asciidoctor-diagram[asciidoctor-diagram]), as well as the maven assembly plugin to package a HTML-Rendered version of the documentation (for later upload or distribution).
+
+IMPORTANT: If you wish to use the Shaape rendering support, you need to have Shaape installed locally.
+
+
+=== Quick reference
+
+* https://github.com/christiangoltz/shaape[Shaape] (Download README.html!)
+* http://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide]
+
+=== TO-DOs / Other ideas:
+
+* Provide both, an english as well as a german version (configuration parameter when generating, maybe?).
+  - There is some denglisch going on in there - maybe support arc42 cleaning up a little?.
+* Help the arc42 fellows to provide the templates as a maven artifact for easier version management.
+* Reuse groupId, artifactId (maybe other parameters) within the template (for titles or the like).
