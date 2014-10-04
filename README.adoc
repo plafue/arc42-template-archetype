@@ -2,7 +2,7 @@ image::https://travis-ci.org/plafue/arc42-template-archetype.svg?branch=master[B
 
 == arc42-Template Maven Archetype
 
-This is a maven archetype that can aid including the arc42 software architecture template into existing maven projects. The approach here is to use open, "diffable" artifacts (AsciiDoc documents, Shaape diagrams) to ease working with the documentation with developer tools, as well as being able to export to non-technical user friendly formats. Of course you can use other supporting tools or formats if you wish so.
+This is a maven archetype that can aid including the arc42 software architecture template into existing maven projects. The approach here is to use open, "diffable" artifacts (AsciiDoc documents, other artefacts) to ease working with the documentation with developer tools, as well as being able to export to non-technical user friendly formats. Of course you can use other supporting tools or formats if you wish so.
 
 The more generic, verbose asciidoc "golden-master" template is used here, to also help newcomers to find their way in the template structure.
 
@@ -41,7 +41,7 @@ artifactId
             ├── appendix-references.adoc
             ├── arc42-template.adoc
             ├── config.adoc
-            ├── images                            <--- Automagically rendered Shaape diagrams will be stored here.
+            ├── images
             │   └── arc42-logo.png
             ├── template-blackbox-long.adoc
             ├── template-blackbox-short.adoc
@@ -54,25 +54,17 @@ mvn process-resources generate-resources
     \                 \ This phase generates a zip file on target, with the contents of target/generated-docs
      \ This phase renders the html version of your adoc files under target/generated-docs
 
-IMPORTANT: If you get an error saying +
-(LoadError) no such file to load -- asciidoctor-diagram/shaape +
-Please make sure that https://github.com/christiangoltz/shaape#installation[you have installed Shaape in your computer], as the included arc42 template contains some Shaape sample diagrams.
-
-
 === Nanos gigantum humeris insidentes
 
 This piece of software is in no way affiliated with arc42.org but it reuses it's core artifact (without necessarily extending it).
 The arc42 template is distributed under the MIT Liscense (see https://github.com/arc42/arc42-template).
 
 The POM of the generated project is also preconfigured with the awesome http://asciidoctor.org/news/2014/08/23/asciidoctor-maven-plugin-1-5-0-released/[asciidoctor-maven-plugin],
-support of Shaape diagrams (thanks to https://github.com/asciidoctor/asciidoctor-diagram[asciidoctor-diagram]), as well as the maven assembly plugin to package a HTML-Rendered version of the documentation in a zip file (for later upload or distribution).
-
-IMPORTANT: If you wish to use the Shaape rendering support, you need to have Shaape installed locally.
+as well as the maven assembly plugin to package a HTML-Rendered version of the documentation in a zip file (for later upload or distribution).
 
 
 === Quick reference
 
-* https://github.com/christiangoltz/shaape[Shaape] (Download README.html!)
 * http://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide]
 
 === TO-DOs / Other ideas:

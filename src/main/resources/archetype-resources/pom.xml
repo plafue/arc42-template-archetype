@@ -62,9 +62,6 @@
                 <configuration>
                     <sourceDirectory>src/docs/arc42</sourceDirectory>
                     <gemPath>${project.build.directory}/gems-provided</gemPath>
-                    <requires>
-                        <require>asciidoctor-diagram/shaape</require>
-                    </requires>
                 </configuration>
                 <executions>
                     <execution>
