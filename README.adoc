@@ -17,7 +17,7 @@ Once the archetype is available in your local maven repository, you can generate
 
 [source,bash]
 mvn archetype:generate                                  \
-  -DarchetypeGroupId=org.plafuro.arc                    \
+  -DarchetypeGroupId=org.plafue.arc                     \
   -DarchetypeArtifactId=arc42-template-archetype        \
   -DarchetypeVersion=1.0-SNAPSHOT                       \
 
